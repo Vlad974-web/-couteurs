@@ -1,0 +1,861 @@
+/* DOCUMENT INFORMATION 
+    -Document: fils
+    -Version: 1.0.0
+    -Author: Vlad
+*/
+
+/* COLORS
+    -navigation                 #fff
+    -li                         #fff
+    -a                          #fff
+    -logo                       #00D4C6
+    -link                       #00D4C6
+    -title h1                   #fff
+    -title p                    #c7c7c7
+    - .buy and .buy:hover       #00D4C6 and #fff
+    - .social                   #fff
+    - .nav-buy li a             #000000
+    -h5                         #ef5602
+    -h2                         ///////
+    -p                          ///////
+*/
+
+/* FONTS 
+    - body                      'Ubuntu', sans-serif
+    - logo                      'Quicksand', sans-serif
+    - .title h1                 'Krona One', sans-serif
+    - .nav-buy li a             SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif
+    -h2                         SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif
+    -h5                         SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif
+    -span                       SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif
+    -p                          SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =NAVBAR
+    4. =TITLE
+    5. =ARROW
+    6. =FOOTER
+*/
+
+/* GLOBAL
+=========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 300;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+}
+
+span {
+    font-size: 20px;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 20px;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER
+=========================== */
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(1, 3, 56, .8), rgba(1, 3, 56, .4)) , url(../images/apple-airpods-pro-1.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.buy-header {
+    height: 100vh;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.design-header {
+    height: 100vh;
+    background: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quality-header {
+    height: 100vh;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR INDEX AND DESIGN AND BATTERIE
+======================================= */
+
+.navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    top: 5%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
+
+.icon li a {
+    margin: 0 40px 0 0;
+}
+
+.logo {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: #00D4C6;
+}
+
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    color: #00D4C6;
+}
+/* NAVBAR BUY
+=========================== */
+
+.nav-buy {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* NAVBAR QUALITY
+=========================== */
+
+.navigation-quality {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    top: 5%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    color: black;
+}
+
+.menu-quality {
+    display: flex;
+}
+
+.nav-quality {
+    display: flex;
+    list-style: none;
+}
+
+.nav-quality li a {
+    color: black;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
+
+.logo-quality {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: #00D4C6;
+}
+
+/* TITLE
+=========================== */
+
+.title {
+    top: 35%;
+    left: 10%;
+    width: 35%;
+    position: absolute;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+}
+
+.title p {
+    color: #c7c7c7;
+    font-size: 20px;
+    font-weight: 400;
+} 
+
+.buy {
+    background: none;
+    border: 3px solid;
+    border-color: #00D4C6;
+    text-decoration: none;
+    color: #00D4C6;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.buy:hover {
+    background: #00D4C6;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__rotateInDownLeft {
+    --animate-duration: 3.5s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+
+/* TITLE BUY
+=========================== */
+
+.buy-title {
+    margin-top: 60%;
+}
+
+.pods-img {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.buy-title p {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.buy-title h5 {
+    color: #ef5602;
+}
+
+/* TITLE DESIGN
+=========================== */
+
+.home-title {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    display: block;
+    margin-left: 5%;
+    max-width: 100%;
+}
+
+.home-title p {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.home-title h1 {
+    font-size: 86px;
+    color: #f5f5f7;
+    font-weight: 700;
+}
+
+.size h1 {
+    font-size: 60px;
+}
+
+
+/* This only changes this particular animation duration p */
+.animate__animated.animate__backInLeft {
+    --animate-duration: 1.5s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 2s;
+  }
+
+  /* This only changes this particular animation duration */
+.animate__animated.animate__backInDown {
+    --animate-duration: 3s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+/* TITLE DESIGN 2
+=========================== */
+  .home-title2 {
+      background-color: black;
+  }
+
+  .home-title2 p {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 700;
+  }
+
+   /* This only changes this particular animation duration */
+.animate__animated.animate__rollIn {
+    --animate-duration: 10s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+  .home-img {
+      max-width: 100%;
+  }
+/* TITLE DESIGN 3
+=========================== */
+  .home-title3 {
+      height: 100vh;
+      background-image: url(../images/Apple\ 3tailles.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-attachment: fixed;
+  }
+
+  .home-title3 p {
+      color: #fff;
+      text-align: center;
+      width: 80%;
+      margin-top: 70%;
+      font-size: 30px;
+  }
+/* TITLE DESIGN 4
+=========================== */
+  .home-title4 {
+      height: 100vh;
+      background-color: black;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .home-title4 p {
+      font-size: 21px;
+      font-weight: 700;
+  }
+
+  .home-title4 h1 {
+      font-size: 96px;
+      font-weight: 700;
+      color: #f5f5f7;
+  }
+/* TITLE DESIGN 5
+=========================== */
+  .home-title5 {
+      height: 100vh;
+      background-image: url(../images/apple\ audio.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .text-one {
+      color: #fff;
+      font-weight: 700;
+      font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      top: 150px;
+      right: 150px;
+  }
+
+  .text-two {
+      color: #fff;
+      font-weight: 700;
+      font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      top: 500px;
+      right: 430px;
+  }
+
+  .text-three {
+      color: #fff;
+      font-weight: 700;
+      font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      top: 150px;
+      left: 250px;
+  }
+
+  .text-four {
+      color: #fff;
+      font-weight: 700;
+      font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      top: 500px;
+      right: 30px;
+}
+/* TITLE DESIGN 6
+=========================== */
+.home-title6 {
+    background-image: url(../images/AirPods\ femme.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-title6 p {
+    margin-right: 50px;
+}
+
+/* QUALITY 
+=========================== */
+
+.title-quality {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    display: block;
+    margin-left: 5%;
+}
+
+.title-quality p {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.title-quality h1 {
+    font-size: 80px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* This only changes this particular animation duration p */
+.animate__animated.animate__backInLeft {
+    --animate-duration: 1.5s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 2s;
+  }
+
+  /* This only changes this particular animation duration */
+.animate__animated.animate__backInDown {
+    --animate-duration: 3s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+/* QUALITY PAGE 2  
+=========================== */
+
+.page2-quality {
+    background-image: url(../images/AirPods\ Pro\ white\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page2-quality p {
+    margin-top: 450px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 15px;
+}
+
+   /* This only changes this particular animation duration */
+   .animate__animated.animate__fadeInTopLeft {
+    --animate-duration: 8s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+  /* QUALITY PAGE 3  
+=========================== */
+
+.micro-img {
+    text-align: center;
+    color: black;
+    margin-left: 600px;
+    margin-top: 200px;
+    position: absolute;
+}
+
+.text1 {
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 300px;
+}
+
+.text2 {
+    text-align: center;
+    margin-top: 600px;
+    margin-right: 200px;
+}
+
+  /* QUALITY PAGE 4 
+=========================== */
+
+.page4-quality {
+    height: 100vh;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page4-quality p {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.page4-quality h1 {
+    font-size: 96px;
+    font-weight: 700;
+    color: black;
+}
+
+  /* QUALITY PAGE 5 
+=========================== */
+
+.page5-quality {
+    margin-top: 20px;
+}
+
+.text3 {
+    margin-top: 200px;
+}
+
+.inside-img {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+  /* QUALITY PAGE 6 
+=========================== */
+
+.img-text img {
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px 10px #eeeaea;
+}
+
+.img-text p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* BATTERIE 2 
+=========================== */
+
+.page2-batterie {
+    background-color: black;
+}
+
+.batterie-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page2-batterie p {
+    text-align: center;
+    margin-top: 50px;
+}
+
+  /* This only changes this particular animation duration */
+  .animate__animated.animate__backInRight{
+    --animate-duration: 8s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 10s;
+  }
+
+/* BATTERIE 3 
+=========================== */
+
+.page3-batterie {
+    background-color: black;
+}
+
+.batterie-plus {
+    margin: 50px 0;
+}
+
+.batterie-plus p {
+    color: #fff;
+}
+
+.p-size {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.produit-icon {
+    font-size: 35px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* ADMINISTRATION
+=========================== */
+.admin-header {
+    height: 60vh;
+    background-image: url(../images/the-1st-logo-23-1024x341.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-admin {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-admin div {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.menu-admin a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-admin a:hover {
+    color: #00D4C6;
+}
+
+.table-h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    color: black solid;
+}
+
+.table {
+    max-width: 100%;
+}
+
+.thead-dark {
+    font-size: 20px;
+}
+
+.tbody {
+    font-size: 15px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#title, #date, #price-airpods, #text-form {
+    width: 60%;
+}
+
+.title-article, .date-admin, .buy-admin, .comment-admin {
+    margin-bottom: 20px;
+}
+
+/* ARROWUP
+=========================== */ 
+
+.arrowUp {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(130deg, #2d2722 50%, #398a99 50%);
+    -webkit-background-size: 300%;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.arrowUp:hover {
+    background-position: 100% 0;
+    text-decoration: none;
+}
+
+  /* FOOTER
+=========================== */
+
+.end-head {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 92%;
+    left: 25%;
+    transform: translate(-20%, -50%);
+}
+
+.end-head li {
+    margin: 0 20px;
+}
+
+.social {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+}
+
+.social::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+
+.social:hover::before {
+    border-style: dashed;
+    border-color: #0cdff2;
+    animation: rotating 5s infinite;
+    animation-timing-function: linear;
+}
+
+.social:hover {
+    text-decoration: none;
+    color: #0cdff2;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

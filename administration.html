@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">  
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Administration</title>
+</head>
+<body>
+    <!--=============== NAVBAR ===============-->
+    <header class="admin-header">
+        <div class="menu-admin">
+            <div><a href="./index.html">Accueil</a></div>
+            <div> <a href="./design.html">Design</a></div>
+            <div><a href="./quality.html">Qualité audio</a></div>
+            <div><a href="./batterie.html">Batterie</a></div>
+            <div><a href="./buy.html">Acheter</a></div>
+            <div><a href="./administration.html">Admin</a></div>
+        </div>
+    </header>
+
+    <!--=============== TITLE OF TABLE ===============-->
+    <h2 class="table-h2">Gestion des comptes</h2>
+
+    <!--=============== TABLE ===============-->
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nom/Prénom</th>
+                <th>Date dernière commande</th>
+                <th>Prix</th>
+                <th>E-mail</th>
+                <th>Supprimé</th>
+            </tr>
+        </thead>
+
+        <tbody class="tbody">
+
+            <tr>
+                <td>CHAUMPAULT Nicolas</td>
+                <td>31/07/2019</td>
+                <td>279,00€</td>
+                <td>nico01@gmail.com</td>
+                <td><button><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>DELGADO Stephane</td>
+                <td>25/08/2019</td>
+                <td>279,00€</td>
+                <td>bmw85@yahoo.fr</td>
+                <td><button><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>NAULEAU Kévin</td>
+                <td>08/11/2019</td>
+                <td>240,00€</td>
+                <td>kev85@gmail.com</td>
+                <td><button><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>GENDRON Pierre</td>
+                <td>15/03/2020</td>
+                <td>279,00€</td>
+                <td>pierro65@orange.fr</td>
+                <td><button><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>SEGUY Fabien</td>
+                <td>31/07/2020</td>
+                <td>279,00€</td>
+                <td>fab325@yahoo.fr</td>
+                <td><button><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--=============== ADD NEW CANDIDATE ===============-->
+    <form>
+        <h2 class="table-h2">Ajouter un candidat</h2>
+
+    <!--=============== ADD TO ===============-->
+        <div class="title-article">   
+            <label>Clients:</label> <br>
+            <input type="text" id="title" placeholder="Nom et Prénom">
+        </div>
+    
+    <!--=============== MESSAGE ===============-->
+        <div class="date-admin">
+            <label>Date d'achat:</label> <br>
+            <input type="text" id="date" placeholder="jj/mm/aaaa">
+        </div>
+
+    <!--=============== BUY ===============-->
+        <div class="buy-admin">
+            <label>Prix:</label> <br>
+            <input type="number" id="price-airpods">
+        </div>
+
+    <!--=============== COMMENT ===============-->
+        <div class="comment-admin">
+            <label>Ajuouter un commentaire:</label> <br>
+            <textarea id="text-form" rows="6"></textarea>
+        </div>
+
+    <!--=============== BUTTON ===============-->
+        <button class="buy" type="button">Ajouter</button>
+    </form>
+
+
+
+    
+</body>
+</html>
